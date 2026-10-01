@@ -25,15 +25,38 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
-  # Inputs
-  clk: "CLK"
-  rst_n: "NRES"
-  A: "INP1"
-  B: "INP2"
-  en: "ENABLE"
+  # Dedicated digital inputs (ui_in)
+  ui[0]: "A"
+  ui[1]: "B"
+  ui[2]: "en"
+  ui[3]: "none"
+  ui[4]: "none"
+  ui[5]: "none"
+  ui[6]: "none"
+  ui[7]: "none"
 
-  #output
-  S: "OUT"
+  # Dedicated digital outputs (uo_out)
+  uo[0]: "S"
+  uo[1]: "none"
+  uo[2]: "none"
+  uo[3]: "none"
+  uo[4]: "none"
+  uo[5]: "none"
+  uo[6]: "none"
+  uo[7]: "none"
 
+  # Bidirectional IOs (uio_in / uio_out)
+  uio[0]: "none"
+  uio[1]: "none"
+  uio[2]: "none"
+  uio[3]: "none"
+  uio[4]: "none"
+  uio[5]: "none"
+  uio[6]: "none"
+  uio[7]: "none"
+
+  #  clk , rst_n
+  clk: "clk"
+  rst_n: "rst_n"
 # Do not change!
 yaml_version: 6

@@ -28,20 +28,20 @@ module tb ();
 `endif
 
   // Replace tt_um_example with your module name:
-  adder_demo user_project (
-
-      // Include power ports for the Gate Level test:
+      tt_um_my_project user_project (
+              // Include power ports for the Gate Level test:
 `ifdef GL_TEST
       .VPWR(VPWR),
       .VGND(VGND),
 `endif
-
-      .A(A), // inp 1
-      .B(B), // inp 2
-      .S(S), // output 
-      .en(en), // enable
-      .clk    (clk),      // clock
-      .rst_n  (rst_n)     // not reset
+      .ui_in  (ui_in),
+      .uo_out (uo_out),
+      .uio_in (uio_in),
+      .uio_out(uio_out),
+      .uio_oe (uio_oe),
+      .ena    (ena),
+      .clk    (clk),
+      .rst_n  (rst_n)
   );
 
 endmodule
