@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+It implements a adder_demo , which adds two numbers A and B and checks if they equal to 496
 
 ## How to test
 
-Explain how to use your project
+Demo project, not for use
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None as it is a demo
